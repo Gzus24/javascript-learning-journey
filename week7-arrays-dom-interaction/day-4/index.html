@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+  
+    <div id="form-container">
+       <form id="userForm">
+        <input type="text" id="nameInput" placeholder="Name"/>
+        <input type="number" id="ageInput" placeholder="Age"/>
+        <input type="text" id="locationInput" placeholder="Location"/>
+        <button type="submit">Add User</button>
+        <div id="error">
+          <p class="name hidden"></p>
+          <p class="age hidden"></p>
+          <p class="location hidden"></p>
+        </div>
+      </form>
+      <input id="search" type="text" placeholder="Search users by name...">
+      <label for="sort">Sort cards</label>
+      <select name="sort by" id="sort">
+        <option value="A-Z">Name(A-Z)</option>
+        <option value="Z-A">Name(Z-A)</option>
+        <option value="youngest">Age(Youngest)</option>
+        <option value="oldest">Age(Oldest)</option>
+      </select>
+    </div>
+      
+  <div id="userContainer"></div>
+  
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/b7b300b2d5.js" crossorigin="anonymous"></script>
+</body>
+</html>
